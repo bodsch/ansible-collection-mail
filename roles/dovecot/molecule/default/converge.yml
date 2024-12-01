@@ -7,4 +7,4 @@
   become: false
 
   roles:
-    - role: ansible-dovecot
+    - role: bodsch.mail.dovecot

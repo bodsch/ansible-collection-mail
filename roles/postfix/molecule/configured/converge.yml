@@ -6,4 +6,4 @@
   become: false
 
   roles:
-    - role: ansible-postfix
+    - role: bodsch.mail.postfix
