@@ -1,0 +1,43 @@
+---
+
+namespace: bodsch
+name: mail
+
+version: 0.9.0
+
+readme: README.md
+
+authors:
+  - Bodo Schulz <bodo@boone-schulz.de>
+
+description: A collection of Ansible roles to manage mail services.
+
+license:
+  - Apache-2.0
+
+license_file: ''
+
+tags:
+  - linux
+  - mail
+  - postfix
+  - dovecot
+
+dependencies:
+  bodsch.core: ">=2.0.0"
+
+repository: https://github.com/bodsch/ansible-collection-mail
+documentation: https://github.com/bodsch/ansible-collection-mail/README.md
+homepage: https://github.com/bodsch/ansible-collection-mail
+issues: https://github.com/bodsch/ansible-collection-mail/issues
+
+build_ignore:
+  - "galaxy.yml"
+  - "*.pyc"
+  - "*.retry"
+  - ".ansible-lint"
+  - ".editorconfig"
+  - ".flake8"
+  - ".gitignore"
+  - ".yamllint"
+  - ".github"

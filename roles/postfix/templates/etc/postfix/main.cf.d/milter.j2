@@ -1,0 +1,18 @@
+
+milter_command_timeout = 30s
+milter_connect_macros = j {daemon_name} {daemon_addr} v _
+milter_connect_timeout = 30s
+milter_content_timeout = 300s
+milter_data_macros = i
+milter_default_action = tempfail
+milter_end_of_data_macros = i
+milter_end_of_header_macros = i
+milter_header_checks =
+milter_helo_macros = {tls_version} {cipher} {cipher_bits} {cert_subject} {cert_issuer}
+milter_macro_daemon_name = $myhostname
+milter_macro_defaults =
+milter_macro_v = $mail_name $mail_version
+milter_mail_macros = i {auth_type} {auth_authen} {auth_author} {mail_addr} {mail_host} {mail_mailer}
+milter_protocol = 6
+milter_rcpt_macros = i {rcpt_addr} {rcpt_host} {rcpt_mailer}
+milter_unknown_command_macros =

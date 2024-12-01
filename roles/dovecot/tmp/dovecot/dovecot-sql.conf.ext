@@ -1,0 +1,10 @@
+#
+
+driver               = mysql
+connect              = host=127.0.0.1 dbname=postfix user=postfix password=oCex3uHPpe4bWYnSyJWvJ6oM0un0Wm
+default_pass_scheme  = CRAM-MD5
+
+password_query       = SELECT password FROM mailbox WHERE username = '%u'
+user_query           = SELECT '/srv/mail/%d/%n' as home,  CONCAT('maildir:/srv/mail/',maildir) AS mail, 1101 AS uid, 1101 AS gid FROM mailbox WHERE username = '%u'
+
+
